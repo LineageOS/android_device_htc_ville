@@ -1,3 +1,5 @@
+# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2016 The CyanogenMod Project
 # Copyright (C) 2009 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,12 +31,8 @@
 
 # Audio
 AUDIO_FEATURE_ENABLED_FM := true
-BOARD_USES_FLUENCE_INCALL := true
-BOARD_USES_LEGACY_ALSA_AUDIO := true
-BOARD_USES_SEPERATED_AUDIO_INPUT := true
-BOARD_USES_SEPERATED_HEADSET_MIC := true
-BOARD_USES_SEPERATED_VOIP := true
 QCOM_FM_ENABLED := true
+USE_CUSTOM_AUDIO_POLICY := 1
 
 # Bootloader
 TARGET_BOARD_INFO_FILE ?= device/htc/ville/board-info.txt
