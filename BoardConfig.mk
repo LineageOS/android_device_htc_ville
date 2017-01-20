@@ -30,7 +30,6 @@
 -include device/htc/s4-common/BoardConfigCommon.mk
 
 # Audio
-AUDIO_FEATURE_ENABLED_FM := true
 BOARD_HAVE_QCOM_FM := true
 TARGET_QCOM_NO_FM_FIRMWARE := true
 USE_CUSTOM_AUDIO_POLICY := 1
