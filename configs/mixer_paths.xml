@@ -188,7 +188,7 @@
         <ctl name="AFE_PCM_RX Audio Mixer MultiMedia5" value="1" />
     </path>
 
-    <!-- HiFi LowlatencyUSB PROXY Rx (not provided by HTC) -->
+    <!-- HiFi LowlatencyUSB PROXY Rx -->
     <path name="low-latency-playback usb-headphones">
         <ctl name="AFE_PCM_RX Audio Mixer MultiMedia5" value="1" />
     </path>
@@ -206,6 +206,16 @@
     <!-- HiFi RecBT SCO WB Tx -->
     <path name="audio-record bt-sco-wb">
         <ctl name="MultiMedia1 Mixer INTERNAL_BT_SCO_TX" value="1" />
+    </path>
+
+    <!-- HiFi RecPROXY Tx -->
+    <path name="afe-proxy-record">
+        <ctl name="MultiMedia1 Mixer AFE_PCM_TX" value="1" />
+    </path>
+
+    <!-- HiFi RecUSB PROXY Tx -->
+    <path name="audio-record usb-headset-mic">
+        <ctl name="MultiMedia1 Mixer AFE_PCM_TX" value="1" />
     </path>
 
     <!-- HiFi Rec Compressed -->
@@ -226,6 +236,11 @@
     <!-- HiFi Lowlatency RecBT SCO WB Tx -->
     <path name="low-latency-record bt-sco-wb">
         <ctl name="MultiMedia5 Mixer INTERNAL_BT_SCO_TX" value="1" />
+    </path>
+
+    <!-- HiFi Lowlatency RecUSB PROXY Tx -->
+    <path name="audio-record usb-headset-mic">
+        <ctl name="MultiMedia5 Mixer AFE_PCM_TX" value="1" />
     </path>
 
     <!-- FM REC -->
@@ -268,6 +283,12 @@
         <path name="voice-call-bt-sco-tx" />
     </path>
 
+    <!-- Voice CallUSB PROXY Tx -->
+    <path name="voice-call usb-headset-mic">
+        <ctl name="AFE_PCM_RX_Voice Mixer CSVoice" value="1" />
+        <ctl name="Voice_Tx Mixer AFE_PCM_TX_Voice" value="1" />
+    </path>
+
     <!-- Voice Call IP -->
     <path name="compress-voip-call">
         <ctl name="SLIM_0_RX_Voice Mixer Voip" value="1" />
@@ -292,25 +313,26 @@
         <path name="compress-voip-call-bt-sco-tx" />
     </path>
 
-    <!-- (Not provided by HTC) -->
+    <!-- Voice Call IPUSB PROXY Tx -->
+    <path name="compress-voip-call usb-headset-mic">
+        <ctl name="AFE_PCM_RX_Voice Mixer Voip" value="1" />
+        <ctl name="Voip_Tx Mixer AFE_PCM_TX_Voip" value="1" />
+    </path>
+
+    <!-- UL REC -->
     <path name="incall-rec-uplink">
         <ctl name="MultiMedia1 Mixer VOC_REC_UL" value="1" />
     </path>
 
-    <!-- (Not provided by HTC) -->
+    <!-- DL REC -->
     <path name="incall-rec-downlink">
         <ctl name="MultiMedia1 Mixer VOC_REC_DL" value="1" />
     </path>
 
-    <!-- (Not provided by HTC) -->
+    <!-- UL DL REC -->
     <path name="incall-rec-uplink-and-downlink">
         <path name="incall-rec-uplink" />
         <path name="incall-rec-downlink" />
-    </path>
-
-    <!-- HiFi RecPROXY Tx -->
-    <path name="afe-proxy-record">
-        <ctl name="MultiMedia1 Mixer AFE_PCM_TX" value="1" />
     </path>
 
     <!-- These are actual sound device specific mixer settings -->
@@ -655,6 +677,10 @@
         <ctl name="DEC5 MUX" value="ADC2" />
         <ctl name="DEC5 Volume" value="79" />
         <ctl name="ADC2 Volume" value="3" />
+    </path>
+
+    <!-- USB PROXY Tx -->
+    <path name="usb-headset-mic">
     </path>
 
     <!-- Voice Headset -->
