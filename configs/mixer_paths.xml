@@ -239,7 +239,7 @@
     </path>
 
     <!-- HiFi Lowlatency RecUSB PROXY Tx -->
-    <path name="audio-record usb-headset-mic">
+    <path name="low-latency-record usb-headset-mic">
         <ctl name="MultiMedia5 Mixer AFE_PCM_TX" value="1" />
     </path>
 
