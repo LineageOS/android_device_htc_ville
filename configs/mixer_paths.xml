@@ -86,7 +86,6 @@
     <ctl name="MultiMedia5 Mixer AFE_PCM_TX" value="0" />
     <ctl name="MultiMedia5 Mixer INTERNAL_BT_SCO_TX" value="0" />
     <ctl name="MultiMedia5 Mixer SLIM_0_TX" value="0" />
-    <ctl name="MultiMedia5 Mixer SLIMBUS_0_TX" value="0" />
     <ctl name="PCM_RX_DL_HL Switch" value="0" />
     <ctl name="RX1 Digital Volume" value="0" />
     <ctl name="RX1 MIX1 INP1" value="ZERO" />
